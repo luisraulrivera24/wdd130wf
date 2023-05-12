@@ -1,0 +1,49 @@
+* {
+    background-color: #fb9de2;
+    color: white;
+    font-size: 16px;
+    /* border: 2px solid blue; */
+}
+.education-header {
+    font-size: 46px;
+    width: 20%;
+    margin: 20px auto;
+    text-align: center;
+}
+.education-header:hover {
+    color: black;
+}
+.education-quote {
+    width: 45%;
+    margin: 20px auto;
+    text-align: center;
+}
+.bolded-name {
+    font-weight: bolder;
+    text-align: center;
+}
+.bolded-af {
+    width: 57%;
+    margin: 40px auto;
+    color: black;
+    font-weight: bolder;
+    font-size: 26px;
+}
+main img {
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+}
+.atonement-quote {
+    width: 40%;
+    font-size: 46px;
+    margin: 40px auto;
+    text-align: center;
+}
+footer p {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 26px;
+    color: black;
+}
