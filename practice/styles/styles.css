@@ -2,19 +2,22 @@ a {
     color: white;
     margin: 40px;
     font-size: 1.5em;
+    padding: 25px;
 }
 h1 {
     color: steelblue;
     text-align: center;
+    margin: 50px 0;
 }
 img {
     width: 80%;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
+    border: 4px solid steelblue;
 }
 main p {
     width: 80%;
-    margin: 50px auto;
+    margin: 20px auto;
     text-align: center;
 }
 .main-para {
@@ -28,7 +31,13 @@ main p {
 /* * {
     border: 2px solid blue;
 } */
-nav, footer {
+nav {
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+    padding: 25px;
+}
+footer {
     text-align: center;
     background-color: steelblue;
     color: white;
@@ -36,9 +45,18 @@ nav, footer {
 }
 footer p {
     font-size: 20px;
-    margin: 20px auto;
+    padding: 0px;
+    margin: 0px auto;
 }
 a:hover {
     background-color: white;
     color: steelblue;
+}
+/* You may have noticed that little bit of space all around the
+edge of the whole page. That is default CSS margins on the body element.
+If you want your header and footer to start at the very top and
+stretch out all the way to the left and right with no gap, you can set
+the body element to a margin of 0. */
+body {
+    margin: 0
 }
