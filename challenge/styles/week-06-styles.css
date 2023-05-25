@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+/*This was made for the medium screen size of my laptop*/
+.parent-grid {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-gap: 20px; */
+}
+h1 {
+    font-size: 11em;
+    letter-spacing: 2rem;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    /* This is for vertical alignment */
+    align-self: center;
+    /* This is for horizontal alignment */
+    text-align: center;
+}
+#cherries {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    letter-spacing: 1rem;
+}
+#gray-background {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    background-color: gray;
+}
+h4 {
+    font-size: 5em;
+    letter-spacing: 1rem;
+    align-self: center;
+    text-align: center;
+    color: #8b031e;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
