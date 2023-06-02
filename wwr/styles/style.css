@@ -12,15 +12,30 @@ Fonts are separated by a & */
     max-width: 1600px;
     margin: 0 auto;
 }
+header {
+    background-color: #44633F;
+    display: grid;
+    grid-template-columns: 150px auto;
+    opacity: .85;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
 nav a {
     text-align: center;
     color: #dbe5d7;
     text-decoration: none;
     padding: 35px;
 }
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
-    color: #dbe5d7;
+    color: white;
 }
 .button-box {
     text-align: center;
@@ -34,19 +49,20 @@ main section img {
 #background {
     height: 725px;
     background-color: #b17960;
+    grid-column: 1/11;
+    grid-row: 4/9;
 }
 #logo_link {
     background-color: #44633F;
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
 body {
     background-color: #296281;
     font-size: 22px;
     margin: 0;
     padding: 0;
-}
-header {
-    background-color: #44633F;
 }
 nav a:hover {
     background-color: #b17960;
@@ -79,6 +95,9 @@ nav a:hover {
     color: #dbe5d7;
     line-height: 1.5em;
     padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 .msg p {
     font-size: .8em;
@@ -90,6 +109,9 @@ footer {
     font-size: 1.2em;
     padding: 25px 50px;
     margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 footer a {
     color: #dbe5d7;
@@ -110,6 +132,8 @@ footer .social img {
 }
 .home-grid {
     color: #dbe5d7;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
 }
 .logo, .icon {
     width: 80px;
@@ -123,6 +147,16 @@ footer .social img {
 /* #hero {
     border: 1px solid #dbe5d7;
 } */
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
 #content header nav, h1, h2 {
     font-family: var(--heading-font);
 }
@@ -135,9 +169,74 @@ h2 {
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
 }
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.camping-card {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+.rapids-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
 .card-img {
     border: 10px solid #dbe5d7;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.card-img, .mountains {
+    width: 100%;
 }
 .mountains {
     margin: 200px auto;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
