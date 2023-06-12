@@ -13,7 +13,7 @@ Fonts are separated by a & */
   /* other: #E2E8CE */
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "Archivo Black", Calistoga, "Martian Mono";
+  --heading-font: Calistoga, "Martian Mono";
   --paragraph-font: "Trebuchet MS", "Noto Serif Georgian", Lora;
 
   /* these colors below should be chosen from among your palette colors above */
@@ -27,7 +27,13 @@ Fonts are separated by a & */
   --nav-hover-link-color: white;
   --nav-hover-background-color: #A5703B;
 }
-
+.questions, .reservations {
+  list-style-position: inside;
+  text-align: left;
+}
+body {
+  line-height: 1.6;
+}
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
