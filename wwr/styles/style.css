@@ -9,7 +9,7 @@ Fonts are separated by a & */
     --paragraph-font: Lora, Helvetica, sans-serif;
   }
 #content {
-    width: 70%;
+    width: 80%;
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -244,7 +244,6 @@ p, ul {
 }
 #blog-highlights-grid {
     display: grid;
-    height: 700px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
 }
@@ -269,7 +268,7 @@ p, ul {
     padding: 20px;
     grid-column: 4/6;
     grid-row: 2/6;
-    line-height: 25pt;
+    line-height: 200%;
     border: solid #b17960;
 }
 #second-space {
