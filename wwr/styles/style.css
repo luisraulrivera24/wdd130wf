@@ -210,6 +210,7 @@ h1, h4 {
 p, ul {
     font-family: var(--paragraph-font);
     color: #dbe5d7;
+    font-size: 1em;
 }
 #blog-grid {
     display: grid;
@@ -268,7 +269,7 @@ p, ul {
     padding: 20px;
     grid-column: 4/6;
     grid-row: 2/6;
-    line-height: 22pt;
+    line-height: 25pt;
     border: solid #b17960;
 }
 #second-space {
