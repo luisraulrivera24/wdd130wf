@@ -9,7 +9,7 @@ Fonts are separated by a & */
     --paragraph-font: Lora, Helvetica, sans-serif;
   }
 #content {
-    width: 80%;
+    width: 100%;
     max-width: 1600px;
     margin: 0 auto;
 }
