@@ -9,6 +9,7 @@ Fonts are separated by a & */
     --paragraph-font: Lora, Helvetica, sans-serif;
   }
 #content {
+    width: 70%;
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -16,7 +17,6 @@ header {
     background-color: #44633F;
     display: grid;
     grid-template-columns: 150px auto;
-    opacity: .85;
 }
 nav {
     display: flex;
@@ -199,6 +199,104 @@ h2 {
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
 }
+
+/* ############################################ This is the blog section ############################################ */
+
+h1, h4 {
+    font-family: var(--heading-font);
+    color: white;
+    font-size: 2em;
+}
+p, ul {
+    font-family: var(--paragraph-font);
+    color: #dbe5d7;
+}
+#blog-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+#blog-grid .image {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/6;
+    grid-row: 1/6;
+}
+#blog-grid h4 {
+    grid-column: 2/5;
+    grid-row: 1/2;
+}
+#blog-grid p {
+    color: white;
+    grid-column: 2/5;
+    grid-row: 2/3;
+}
+#blog-grid .button-box {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#first-space {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    background-color: #b17960;
+}
+#blog-highlights-grid {
+    display: grid;
+    height: 700px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+#blog-highlights-grid .image {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/4;
+    grid-row: 1/6;
+}
+#blog-highlights-grid div {
+    grid-column: 4/6;
+    grid-row: 1/2;
+    margin: 0;
+    padding: 0;
+    border: solid #b17960;
+}
+#blog-highlights-grid div h4 {
+    text-align: center;
+}
+#blog-highlights-grid p {
+    margin: 0;
+    padding: 20px;
+    grid-column: 4/6;
+    grid-row: 2/6;
+    line-height: 22pt;
+    border: solid #b17960;
+}
+#second-space {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    background-color: #b17960;
+}
+#blog-wildlife-encounters-grid img {
+    width: 100%;
+}
+#blog-wildlife-encounters-grid div {
+    border: solid #b17960;
+    padding: 10px;
+    line-height: 40pt;
+}
+#blog-wildlife-encounters-grid div p {
+    text-align: left;
+}
+footer {
+    margin: 0;
+}
+ul {
+    text-align: left;
+}
+
+/* ############################################ Media Queries ############################################ */
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
