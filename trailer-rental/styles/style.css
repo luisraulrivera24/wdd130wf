@@ -198,6 +198,7 @@ footer #footer-grid .follow-us {
   padding: 2%;
   border-radius: 5px;
   margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 #background-home {
@@ -234,7 +235,7 @@ footer #footer-grid .follow-us {
 }
 
 #second-2-home #second-paragraph {
-  text-align: center;
+  text-align: left;
 }
 
 #second-2-home #second-paragraph .book {
