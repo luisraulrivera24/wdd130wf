@@ -149,9 +149,6 @@ footer #footer-grid .follow-us {
   grid-row: 1/2;
 }
 
-.address, .follow-us {
-  font-size: 1em;
-}
 .other-part {
   grid-column: 3/5;
 }
@@ -185,7 +182,6 @@ footer #footer-grid .follow-us {
 
 .first-home .first-section .first-paragraph {
   line-height: 1.75em;
-  font-size: 1em;
 }
 
 .first-home .first-section .book {
