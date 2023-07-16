@@ -10,55 +10,55 @@
 </head>
 <!--------------------------- The body starts here ----------------------------->
 <body>
-    <!--------------------------- Here is where the header starts ----------------------------->
+    <!-- =================================== Here is where the header starts =================================== -->
     <header>
-        <div class="header-grid">
-            <a id="logo_link" href="index.html">
+        <div id="header-grid">
+            <a class="logo_link" href="index.html">
                 <img class="logo" src="images/logo.jpg" alt="Rivera's Trailer Rentals Logo">
             </a>
             <h1><strong>Rivera's Trailer Rentals</strong></h1>
             <img class="truck-trailer" src="images/pickup_with_trailer_animation.png" alt="image of animated pickup towing a trailer">
-            <!--------------------------- This is the code for the login button ----------------------------->
+            <!-- This is the code for the login button -->
             <a class="book" href="">LOGIN</a>
         </div>
     </header>
-    <!--------------------------- This is code for the side navigation ----------------------------->
-    <div class="sidenav">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="trailers-and-prices.html">Trailers & Prices</a>
-            <a href="careers.html">Careers</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
     <!--------------------------- This is where main starts ----------------------------->
     <main id="tp-main">
-        <div id="section-1-tp">
-            <section class="header">
+        <div id="tp-1-main">
+            <!-- =================================== This is code for the side navigation part 1 =================================== -->
+            <div class="sidenav">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="trailers-and-prices.html">Trailers & Prices</a>
+                    <a href="careers.html">Careers</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <div class="header-tp">
                 <h1>Dump Trailers and Prices</h1>
-            </section>
-            <section class="image-price-1">
+            </div>
+            <div class="image-price-1">
                 <img class="trailer-1" src="images/trailer_1.jpg" alt="image of trailer">
-                <p>4x7<br>$75/day</p>
-                <section class="button-box-1-tp">
-                    <a class="book" href="">Reserve Now!</a>
-                </section>
-            </section>
-            <section class="image-price-2">
+                <p><strong>4x7<br>$75/day</strong></p>
+            </div>
+            <!-- <div class="button-box-1-tp">
+                <a class="book-1-tp" href="">Reserve Now!</a>
+            </div> -->
+            <div class="image-price-2">
                 <img class="truck-trailer-1" src="images/pickup_with_trailer_1.jpg" alt="image of pickup with trailer">
-                <p>5x8<br>$100/day</p>
-                <section class="button-box-2-tp">
-                    <a class="book" href="">Reserve Now!</a>
-                </section>
-            </section>
-            <section class="image-price-3">
+                <p><strong>5x8<br>$100/day</strong></p>
+            </div>
+            <!-- <div class="button-box-2-tp">
+                <a class="book-2-tp" href="">Reserve Now!</a>
+            </div> -->
+            <div class="image-price-3">
                 <img class="truck-trailer-2" src="images/pickup_with_trailer_3.jpg" alt="image of pickup with trailer">
-                <p>7x14<br>$150/day</p>
-                <section class="button-box-3-tp">
-                    <a class="book" href="">Reserve Now!</a>
-                </section>
-            </section>
-            <section class="paragraph">
+                <p><strong>7x14<br>$150/day</strong></p>
+            </div>
+            <!-- <div class="button-box-3-tp">
+                <a class="book-3-tp" href="">Reserve Now!</a>
+            </div> -->
+            <div class="paragraph-tp">
                 <p>
                     Those visiting our site will want to head on over to the “Trailers & Prices” tab which will automatically
                     takes them to all the available trailers that they can rent from us, along with a break down of pricing
@@ -66,13 +66,15 @@
                     customers find what they like, they can click on the “Reserve Now” button to see the availability of that
                     trailer and when they can get their hands on one.
                 </p>
-            </section>
+            </div>
         </div>
-        <div id="section-2-tp">
-            <section class="header">
+        <div id="tp-2-main">
+            <!-- =================================== This is code for the side navigation part 2 =================================== -->
+            <div class="sidenav"></div>
+            <div class="header-2-tp">
                 <h1>Making a Reservation</h1>
-            </section>
-            <section class="paragraph">
+            </div>
+            <div class="paragraph-2-tp">
                 <p>
                     When booking a reservation online, the following information will be needed:
                 </p>
@@ -83,31 +85,39 @@
                     <li>Credit/Debit card</li>
                     <li>Address</li>
                 </ul>
-            </section>
+            </div>
         </div>
     </main>
-    <!--------------------------- This is where my footer starts ----------------------------->
+    <!-- =================================== This is where my footer starts =================================== -->
     <footer>
-        <a id="logo_link" href="index.html">
-            <img class="logo" src="images/logo.png" alt="Rivera's Trailer Rentals Logo">
-        </a>
-        <a href="contact.html">Contact Us</a>
-        <p>
-            1532 East Davenport<br>
-            Scotch Plains, AZ 00930
-        </p>
-        <div class="social-home">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
+        <div id="footer-grid">
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.jpg" alt="Rivera's Trailer Rentals Logo">
             </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
-            </a>
+            <p class="address">
+                <a class="contact-us" href="contact.html">Contact Us</a><br><br>
+                1532 East Davenport<br>
+                Scotch Plains, AZ 00930
+            </p>
+            <p class="follow-us">
+                Follow us on:
+            </p>
+            <div class="social-home">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+            <p class="other-part">
+                <a class="site-plan" href="site-plan.html">Site Plan</a><br><br>
+                Rivera's Trailer Rentals &copy; 2023
+            </p>
         </div>
-        <a href="site-plan.html">Site Plan</a>
     </footer>
 </body>
 </html>
