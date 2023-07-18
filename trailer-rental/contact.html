@@ -10,76 +10,86 @@
 </head>
 <!--------------------------- The body starts here ----------------------------->
 <body>
-    <!--------------------------- Here is where the header starts ----------------------------->
+    <!-- =================================== Here is where the header starts =================================== -->
     <header>
-        <div class="header-grid">
-            <a id="logo_link" href="index.html">
+        <div id="header-grid">
+            <a class="logo_link" href="index.html">
                 <img class="logo" src="images/logo.jpg" alt="Rivera's Trailer Rentals Logo">
             </a>
             <h1><strong>Rivera's Trailer Rentals</strong></h1>
             <img class="truck-trailer" src="images/pickup_with_trailer_animation.png" alt="image of animated pickup towing a trailer">
-            <!--------------------------- This is the code for the login button ----------------------------->
+            <!-- This is the code for the login button -->
             <a class="book" href="">LOGIN</a>
         </div>
     </header>
-    <!--------------------------- This is code for the side navigation ----------------------------->
-    <div class="sidenav">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="trailers-and-prices.html">Trailers & Prices</a>
-            <a href="careers.html">Careers</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
     <!--------------------------- This is where main starts ----------------------------->
     <main id="contact-main">
-        <!--------------------------- I will need to change the name of the div below ----------------------------->
-        <div id="feedback"></div>
-        <form action="/my-handling-form-page" method="post">
-            <ul>
-                <li>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" />
-                </li>
-                <li>
-                <label for="mail">Email:</label>
-                <input type="email" id="mail" name="user_email" />
-                </li>
-                <li>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-                </li>
-                <li class="button">
-                    <button type="submit">Send your message</button>
-                </li>
-            </ul>
-        </form>
+        <div class="contact-1">
+            <!--------------------------- This is code for the side navigation ----------------------------->
+            <div class="sidenav">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="trailers-and-prices.html">Trailers & Prices</a>
+                    <a href="careers.html">Careers</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <!--------------------------- I will need to change the name of the div below ----------------------------->
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul class="ul-contact">
+                    <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" />
+                    </li>
+                    <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email" />
+                    </li>
+                    <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
     </main>
     <!--------------------------- This is where my footer starts ----------------------------->
     <footer>
-        <a id="logo_link" href="index.html">
-            <img class="logo" src="images/logo.png" alt="Rivera's Trailer Rentals Logo">
-        </a>
-        <a href="contact.html">Contact Us</a>
-        <p>
-            1532 East Davenport<br>
-            Scotch Plains, AZ 00930
-        </p>
-        <div class="social-home">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
+        <div id="footer-grid">
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.jpg" alt="Rivera's Trailer Rentals Logo">
             </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
-            </a>
+            <p class="address">
+                <a class="contact-us" href="contact.html">Contact Us</a><br><br>
+                1532 East Davenport<br>
+                Scotch Plains, AZ 00930
+            </p>
+            <p class="follow-us">
+                Follow us on:
+            </p>
+            <div class="social-home">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+            <p class="other-part">
+                <a class="site-plan" href="site-plan.html">Site Plan</a><br><br>
+                Rivera's Trailer Rentals &copy; 2023
+            </p>
         </div>
-        <a href="site-plan.html">Site Plan</a>
     </footer>
     <!--------------------------- This is where I have the script for the  ----------------------------->
-    <script>
+    <script class="contact-script">
         // get the feedback div element so we can do something with it.
         const feedbackElement = document.getElementById('feedback');
         // get the form so we can read what was entered in it.
